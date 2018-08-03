@@ -1,0 +1,8 @@
+- No need to restart server after each change with nodemon
+
+npm install -g nodemon
+
+- To create package.json
+
+npm init
+
