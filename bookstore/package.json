@@ -9,7 +9,7 @@
   "dependencies": {
     "express":"*",
     "body-parser":"*",
-    "mangoose":"*"
+    "mongoose":"*"
   },
   "author": "Khilan Unadkat",
   "license": "ISC"

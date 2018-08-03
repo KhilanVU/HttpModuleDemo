@@ -1,0 +1,8 @@
+use bookstore
+db.createCollection('books);
+db.createCollection('genres');
+db.genres.insert({name: 'Suspense'});
+db.genres.insert({name: 'Self Help'});
+db.books.insert({title: 'The Murder House', genre: 'Suspense', description: 'xyz', author: 'James Patterson', publisher: 'McGrawHills', pages: '480'});
+db.books.insert({title: 'Fire and Cultural', genre: 'Cultural', description: 'xyz', author: 'Gunvant Shah', publisher: 'McGrawHills', pages: '480'});
+db.books.insert({title: 'Self Help'});
