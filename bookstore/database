@@ -1,8 +1,72 @@
 use bookstore
 db.createCollection('books);
 db.createCollection('genres');
-db.genres.insert({name: 'Suspense'});
-db.genres.insert({name: 'Self Help'});
-db.books.insert({title: 'The Murder House', genre: 'Suspense', description: 'xyz', author: 'James Patterson', publisher: 'McGrawHills', pages: '480'});
-db.books.insert({title: 'Fire and Cultural', genre: 'Cultural', description: 'xyz', author: 'Gunvant Shah', publisher: 'McGrawHills', pages: '480'});
-db.books.insert({title: 'Self Help'});
+
+db.books.insert([
+  {
+        title: "My Experiments with Truths",
+        genre: "Autobiography",
+        description: "Autobiagraphy of MK Gandhi",
+        author: "MK Gandhi",
+        publisher: "Arihant Publications",
+        pages: 500
+  },
+  {
+        title: "Wings of Fire",
+        genre: "Autobiography",
+        description: "Autobiagraphy of Great Indian Scientist and Missile man",
+        author: "A P J Abdul Kalam",
+        publisher: "Tata McGrawHills",
+        pages: 600
+  }],
+  {
+        title: "History of Modern India",
+        genre: "Historical Fiction",
+        description: "History of Indian Freedom Struggle",
+        author: "Bipin Chandra",
+        publisher: "Oxford Publications",
+        pages: 300
+  },
+  {
+        title: "Indian Art and Culture",
+        genre: "Art and Culture",
+        description: "Information about India Arts since Harappan period",
+        author: "Nitin Singhania",
+        publisher: "Tata McGrawHills",
+        pages: 450
+  },
+  {
+        title: "Geography of India",
+        genre: "Geography",
+        description: "Covers Economic, Social and Physical Geography of India",
+        author: "Majid Hussain",
+        publisher: "Arihant Publications",
+        pages: 1000
+  },
+  {
+        title: "My 51 Poems",
+        genre: "Literature",
+        description: "its a book on famous poems by former PM of India Atal Bihari Vajpayee",
+        author: "Atal Bihar Vajpayee",
+        publisher: "Arihant Publications",
+        pages: 101
+  },
+]);
+
+db.genres.insert([
+    {
+        name: "Literature"
+    },
+    {
+        name: "Autobiography"
+    },
+    {
+        name: "Geography"
+    },
+    {
+        name: "Art and Culture"
+    },
+    {
+        name: "Historical Fiction"
+    }
+]);
